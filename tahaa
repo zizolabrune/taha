@@ -1,0 +1,69 @@
+sudo adduser --ingroup taha
+sudo usermod -aG admin taha
+getent group admin
+sudo usermod -aG sudo taha
+getent group sudo | cut -d: -f4 admin, taha
+------------------------------------
+sudo groupadd -g 1001 invite
+sudo adduser --ingroup invite invite
+sudo usermod -aG invite invite
+getent group invite
+-----------------------------------
+su -l taha
+mkdir .ssh
+chmod 700.ssh 
+chmod 700 .ssh
+touch .ssh/authorized_keys
+chmod 600 .ssh/authorized_keys
+~/.ssh$ nano ~/ssh/authorized_keys
+
+cat ~/.ssh/authorized_keys
+
+-------------------------------
+same for user alexis
+----------------------------
+sudo usermod -aG sudo alexis
+getent group sudo
+/etc/ssh/sshd_config
+authentification yes
+-----------------------------------
+FAIL2BAN
+sudo apt install fail2ban
+sudo service fail2ban start
+sudo service fail2ban start
+cd /etc/fail2ban
+/etc/fail2ban$ cd jail.d
+/etc/fail2ban/jail.d$ sudo nano custom.conf
+/etc/fail2ban/jail.d$
+/etc/fail2ban/jail.d$ sudo nano custom.conf
+
+/etc/fail2ban/jail.d$ sudo systemctl status fail2ban
+/etc/fail2ban/jail.d$ sudo sustemctl enable fail2ban
+
+/etc/fail2ban/jail.d$
+---------------------------------
+
+
+web
+
+
+
+/etc/fail2ban/jail.d$ sudo apt-get update
+
+/etc/fail2ban/jail.d$ sudo apt-get upgrade
+
+/etc/fail2ban/jail.d$ sudo apt-get install apache2
+
+sudo /etc/init.d/apache2 status
+
+mkdir www
+cd www/
+~/www$ nano index.html
+
+/etc/apache2/sites-enabled/000-default.conf
+
+(bdli documentRoot b dialk example /home/invite/www)
+
+sudo /etc/init.d/apache2 restart
+
+
